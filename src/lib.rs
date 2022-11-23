@@ -1,5 +1,5 @@
 use std::collections::HashMap;
-pub fn caesar(
+pub fn encryption(
     string: &str,
     shifts: u8,
     lang_arr: Vec<char>,

@@ -1,4 +1,4 @@
-use Caesar::caesar;
+use Caesar::encryption;
 
 fn main() {
     let korea_arr = vec![
@@ -8,8 +8,8 @@ fn main() {
         'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
         's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
     ];
-    println!("{:?}", caesar("fghij  abcde", 5, korea_arr).unwrap());
-    println!("{:?}", caesar("fghij  abcde", 5, alphbet_arr).unwrap());
+    println!("{:?}", encryption("fghij  abcde", 5, korea_arr).unwrap());
+    println!("{:?}", encryption("fghij  abcde", 5, alphbet_arr).unwrap());
 }
 #[cfg(test)]
 mod test {
@@ -22,7 +22,7 @@ mod test {
             'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
         ];
         assert_eq!(
-            caesar("jgorevxumxgsskx", 20, alphbet_arr).unwrap(),
+            encryption("jgorevxumxgsskx", 20, alphbet_arr).unwrap(),
             String::from("dailyprogrammer")
         );
     }
@@ -32,7 +32,7 @@ mod test {
             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
             'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
         ];
-        assert_eq!(caesar("a", 1, alphbet_arr).unwrap(), String::from("b"));
+        assert_eq!(encryption("a", 1, alphbet_arr).unwrap(), String::from("b"));
     }
     #[test]
     fn test2() {
@@ -41,7 +41,7 @@ mod test {
             'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
         ];
         assert_eq!(
-            caesar("abcz", 1, alphbet_arr).unwrap(),
+            encryption("abcz", 1, alphbet_arr).unwrap(),
             String::from("bcda")
         );
     }
@@ -51,7 +51,10 @@ mod test {
             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
             'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
         ];
-        assert_eq!(caesar("irk", 13, alphbet_arr).unwrap(), String::from("vex"));
+        assert_eq!(
+            encryption("irk", 13, alphbet_arr).unwrap(),
+            String::from("vex")
+        );
     }
     #[test]
     fn test4() {
@@ -60,7 +63,7 @@ mod test {
             'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
         ];
         assert_eq!(
-            caesar("fusion", 6, alphbet_arr).unwrap(),
+            encryption("fusion", 6, alphbet_arr).unwrap(),
             String::from("layout")
         );
     }
@@ -71,7 +74,7 @@ mod test {
             'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
         ];
         assert_eq!(
-            caesar("dailyprogrammer", 6, alphbet_arr).unwrap(),
+            encryption("dailyprogrammer", 6, alphbet_arr).unwrap(),
             String::from("jgorevxumxgsskx")
         );
     }
@@ -82,7 +85,7 @@ mod test {
             'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
         ];
         assert_eq!(
-            caesar("jgorevxumxgsskx", 20, alphbet_arr).unwrap(),
+            encryption("jgorevxumxgsskx", 20, alphbet_arr).unwrap(),
             String::from("dailyprogrammer")
         );
     }
