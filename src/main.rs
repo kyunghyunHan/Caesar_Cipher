@@ -26,82 +26,22 @@ fn main() {
         encryption("traue nie dem brutus", 3, alphbet_arr, upper_alphbet_arr).unwrap()
     );
 }
-// #[cfg(test)]
-// mod test {
-
-//     use super::*;
-//     #[test]
-//     fn test() {
-//         let alphbet_arr = vec![
-//             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
-//             'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-//         ];
-//         assert_eq!(
-//             encryption("jgorevxumxgsskx", 20, alphbet_arr).unwrap(),
-//             String::from("dailyprogrammer")
-//         );
-//     }
-//     #[test]
-//     fn test1() {
-//         let alphbet_arr = vec![
-//             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
-//             'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-//         ];
-//         assert_eq!(encryption("a", 1, alphbet_arr).unwrap(), String::from("b"));
-//     }
-//     #[test]
-//     fn test2() {
-//         let alphbet_arr = vec![
-//             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
-//             'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-//         ];
-//         assert_eq!(
-//             encryption("abcz", 1, alphbet_arr).unwrap(),
-//             String::from("bcda")
-//         );
-//     }
-//     #[test]
-//     fn test3() {
-//         let alphbet_arr = vec![
-//             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
-//             'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-//         ];
-//         assert_eq!(
-//             encryption("irk", 13, alphbet_arr).unwrap(),
-//             String::from("vex")
-//         );
-//     }
-//     #[test]
-//     fn test4() {
-//         let alphbet_arr = vec![
-//             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
-//             'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-//         ];
-//         assert_eq!(
-//             encryption("fusion", 6, alphbet_arr).unwrap(),
-//             String::from("layout")
-//         );
-//     }
-//     #[test]
-//     fn test5() {
-//         let alphbet_arr = vec![
-//             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
-//             'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-//         ];
-//         assert_eq!(
-//             encryption("dailyprogrammer", 6, alphbet_arr).unwrap(),
-//             String::from("jgorevxumxgsskx")
-//         );
-//     }
-//     #[test]
-//     fn test6() {
-//         let alphbet_arr = vec![
-//             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
-//             'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-//         ];
-//         assert_eq!(
-//             encryption("jgorevxumxgsskx", 20, alphbet_arr).unwrap(),
-//             String::from("dailyprogrammer")
-//         );
-//     }
-// }
+#[cfg(test)]
+mod test {
+    use super::*;
+    #[test]
+    fn test1() {
+        let alphbet_arr = vec![
+            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
+            'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+        ];
+        let upper_alphbet_arr = vec![
+            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q',
+            'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+        ];
+        assert_eq!(
+            encryption("traue nie dem brutus", 3, alphbet_arr, upper_alphbet_arr).unwrap(),
+            "WUDXH QLH GHP EUXWXV"
+        )
+    }
+}
