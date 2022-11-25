@@ -3,10 +3,11 @@ pub fn encryption(
     string: &str,
     shifts: u8,
     lang_arr: Vec<char>,
+    lang_arr2: Vec<char>,
 ) -> Result<String, Box<dyn std::error::Error>> {
     //현재 반복 횟수와 다음 값을 제공하는 반복자를 만듬.
     //반환된 반복자는 i,val생성
-    let letters: HashMap<usize, &char> = lang_arr.iter().enumerate().collect();
+    let letters: HashMap<usize, &char> = lang_arr2.iter().enumerate().collect();
     let numbers: HashMap<char, usize> = lang_arr
         .iter()
         .enumerate()
