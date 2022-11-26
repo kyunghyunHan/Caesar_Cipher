@@ -33,7 +33,7 @@ pub fn encryption(
                     *letters[&(shift % lang_arr.len())]
                 } else {
                     //아니면 그위치
-                    //5
+                    //5d
                     *letters[&shift]
                 }
             }
