@@ -23,14 +23,17 @@ pub fn encryption(
             } else {
                 //shifts를 usize로 변경후 number  shifts 만큼이동
                 //Hashmap에서 "a"를 찾아서 usize만큼 이동
+                // 5                  0            5
                 let shift = numbers[&c] + shifts as usize;
                 //shift가 배열의 -1보다 크면
                 //정렬
+                //5            13
                 if shift > lang_arr.len() - 1 {
                     //letter shift % 배열의 크기만큼으로 변경
                     *letters[&(shift % lang_arr.len())]
                 } else {
                     //아니면 그위치
+                    //5
                     *letters[&shift]
                 }
             }
