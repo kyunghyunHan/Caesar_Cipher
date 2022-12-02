@@ -21,4 +21,8 @@
 - key값에 나머지를 저장함으로 키 값이 27이면 결국 1만큼이동한것과 같기 때문에 26으로 나머지를 구해준다.
 
 ## 키 값을 더했을 떄 z보다 커질떄
-![카이사르2](https://user-images.githubusercontent.com/88940298/205244684-5d6acbd3-556e-49fc-b92f-b667b1093bd2.svg)
+
+## 전체코드
+
+- [전체코드](https://github.com/kyunghyunHan/Caesar_Cipher/blob/main/README.md)
+  ![카이사르2](https://user-images.githubusercontent.com/88940298/205244684-5d6acbd3-556e-49fc-b92f-b667b1093bd2.svg)
