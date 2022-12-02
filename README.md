@@ -12,6 +12,8 @@
 | ------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 암호문 | D   | E   | F   | G   | H   | I   | J   | K   | L   | M   | N   | O   | P   | Q   | R   | S   | T   | U   | V   | W   | X   | Y   | Z   | A   | B   | C   |
 
+![카이사르2](https://user-images.githubusercontent.com/88940298/205244684-5d6acbd3-556e-49fc-b92f-b667b1093bd2.svg)
+
 ## 알파벳 개수보다 키 값이 커질떄
 
 ```rs
@@ -25,4 +27,3 @@
 ## 전체코드
 
 - [전체코드](https://github.com/kyunghyunHan/Caesar_Cipher/blob/main/README.md)
-  ![카이사르2](https://user-images.githubusercontent.com/88940298/205244684-5d6acbd3-556e-49fc-b92f-b667b1093bd2.svg)
