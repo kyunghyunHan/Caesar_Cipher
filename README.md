@@ -14,6 +14,18 @@
 
 ![카이사르2](https://user-images.githubusercontent.com/88940298/205244684-5d6acbd3-556e-49fc-b92f-b667b1093bd2.svg)
 
+## 키 값 만큼 이동
+
+```rs
+ let shift = numbers[&c] + shifts as usize;
+```
+
+- 3일경우
+
+```rs
+ let shift = numbers[&c] + 3 as usize;
+```
+
 ## 알파벳 개수보다 키 값이 커질떄
 
 ```rs
@@ -21,8 +33,6 @@
 ```
 
 - key값에 나머지를 저장함으로 키 값이 27이면 결국 1만큼이동한것과 같기 때문에 26으로 나머지를 구해준다.
-
-## 키 값을 더했을 떄 z보다 커질떄
 
 ## 전체코드
 
