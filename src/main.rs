@@ -43,5 +43,6 @@ mod test {
             encryption("traue nie dem brutus", 3, alphbet_arr, upper_alphbet_arr).unwrap(),
             "WUDXH QLH GHP EUXWXV"
         )
+          //위 함수는 string 인자로 암호화할 문자열을 입력받아, shifts만큼의 거리로 문자열을 시저 암호화합니다
     }
 }
