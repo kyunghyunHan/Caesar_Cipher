@@ -45,7 +45,7 @@ pub fn encryption(
  let letters: HashMap<usize, &char> = lang_arr_upper.iter().enumerate().collect();
 ```
 
-- 1. letters 변수에 lang_arr2를 열거하면서 각 문자의 인덱스를 저장하는 HashMap을 만든다.
+1. letters 변수에 lang_arr2를 열거하면서 각 문자의 인덱스를 저장하는 HashMap을 만든다.
 
 ```rs
  let numbers: HashMap<char, usize> = lang_arr
@@ -55,7 +55,7 @@ pub fn encryption(
         .collect();
 ```
 
-- 2. numbers 변수에 lang_arr를 열거하면서 각 문자와 인덱스를 저장하는 HashMap을 만든다.
+2. numbers 변수에 lang_arr를 열거하면서 각 문자와 인덱스를 저장하는 HashMap을 만든다.
 
 ```rs
   Ok(string
@@ -63,7 +63,8 @@ pub fn encryption(
         .map(|c| {
 ```
 
-- 3. string을 chars() 메서드를 사용하여 char 타입의 반복자로 변환한다.
+3. string을 chars() 메서드를 사용하여 char 타입의 반복자로 변환한다.
+
 - - map() 메서드를 사용하여 문자열의 각 문자에 대해 시저 암호를 수행한다.
 
 ```rs
@@ -103,7 +104,7 @@ pub fn encryption(
   .collect::<String>())
 ```
 
-- 4. collect() 메서드를 사용하여 암호화된 문자열을 생성합니다.
+4. collect() 메서드를 사용하여 암호화된 문자열을 생성합니다.
 
 ## 전체코드
 
